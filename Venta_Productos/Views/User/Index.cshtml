@@ -1,0 +1,38 @@
+﻿@model User
+@{
+
+    string apellido = ViewData["Apellido"] as string;
+    User usuarioNuevo = ViewData["usuarioNuevo"] as User;
+    int  monto = ViewBag.Monto; 
+}
+
+<div>
+    <div>
+        Nombre : 
+        <span>@Model.Name</span>
+    </div>
+    <div>
+        Apellido :
+        <span>@apellido</span>
+    </div>
+    <div>
+        Monto :
+        <span>@monto</span>
+    </div>
+
+    @{
+        int index = 0;
+
+        <div>
+        <p>NUMEROS</p>
+        @for (int i = 0; i < 10; i++)
+            {
+                <div>
+                @i
+                </div>
+            }
+        </div>
+
+    }
+
+</div>

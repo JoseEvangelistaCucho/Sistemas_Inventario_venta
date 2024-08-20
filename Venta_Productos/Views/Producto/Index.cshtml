@@ -1,0 +1,194 @@
+﻿
+
+<style>
+    /********** POSIBLES GLOBALES*****************/
+
+    .contenedor-general-vista {
+        margin: 2vh;
+    }
+
+    .separador-componentes-vista {
+        margin-bottom: 1vh;
+    }
+
+
+
+    .menu-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .menu-button {
+        cursor: pointer;
+        font-size: 24px; /* Tamaño de los puntos */
+    }
+
+    .menu-options {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #fff;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+        min-width: 120px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+        .menu-options a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+            .menu-options a:hover {
+                background-color: #f1f1f1;
+            }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*************************/
+    .componentes-inicio-final {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .img-vista-detalle {
+        width: 10vh;
+        margin-right: 2vh;
+    }
+
+    .contenedor-detalle-producto {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contenedor-descripcion-producto {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .menu-options {
+        font-weight: bold;
+    }
+
+    .detalle-descripcion{
+        width: 20vh;
+    }
+
+    .eliminar-espacios h3,
+    .eliminar-espacios span,
+    .eliminar-espacios div,
+    .eliminar-espacios p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .card {
+        margin-bottom: 1vh;
+    }
+
+    .row {
+        padding: 2vh;
+    }
+
+    .contenedor-cabecera-general {
+        padding: 0.75vh;
+    }
+</style>
+
+<div class="contenedor-general-vista">
+
+    <div class="contenedor-cabecera-general">
+        <div class="componentes-inicio-final separador-componentes-vista">
+            <h2>Produtos</h2>
+            <button>Registrar Nuevo</button>
+        </div>
+        <div class="separador-componentes-vista">
+            <input />
+        </div>
+    </div>
+
+    <div class="row">
+        @for (int i = 0; i < 10; i++)
+        {
+            <div class="contenedor-detalle-producto card">
+                <div>
+                    <img src="~/imagenes/perno.webp" class="img-vista-detalle" />
+                </div>
+                <div class="contenedor-descripcion-producto">
+                    <div style="display: flex; align-items: baseline;">
+                        <div class="eliminar-espacios detalle-descripcion">
+                            <h3>
+                                Abrazadera
+                            </h3>
+                            <p>@(i)</p>
+                            <p>SIN CATEGORIA</p>
+                        </div>
+                        <div class="eliminar-espacios detalle-descripcion">
+                            <div>
+                                <span>&nbsp;</span>
+                            </div>
+                            <del>SIN DETALLE</del>
+                            <p>UNIDADES</p>
+                        </div>
+                    </div>
+
+                    <div class="item-list">
+                        <div class="item">
+                            <span class="item-name">S/ 5.00</span>
+                            <div class="menu-container">
+                                <span class="menu-button">⋮</span>
+                                <div class="menu-options">
+                                    <a href="#">Opción 1</a>
+                                    <a href="#">Opción 2</a>
+                                    <a href="#">Opción 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+</div>
+
+
+<script>
+    // Añadimos un listener a todos los botones de menú
+    document.querySelectorAll('.menu-button').forEach(function (button) {
+        button.addEventListener('click', function (event) {
+            // Cerrar cualquier menú abierto
+            closeAllMenus();
+
+            // Mostrar el menú del botón clicado
+            var menu = button.nextElementSibling;
+            menu.style.display = 'block';
+
+            // Evitar que el clic cierre el menú inmediatamente
+            event.stopPropagation();
+        });
+    });
+
+    // Función para cerrar todos los menús
+    function closeAllMenus() {
+        document.querySelectorAll('.menu-options').forEach(function (menu) {
+            menu.style.display = 'none';
+        });
+    }
+
+    // Cerrar el menú al hacer clic fuera de él
+    window.onclick = function () {
+        closeAllMenus();
+    };
+
+
+
+</script>
