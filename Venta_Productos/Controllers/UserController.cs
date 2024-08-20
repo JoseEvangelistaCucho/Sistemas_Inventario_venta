@@ -18,7 +18,7 @@ namespace Venta_Productos.Controllers
             ViewData["usuarioNuevo"] = new User()
             {
                 Id = 10,
-                Name = "victor123"
+                Name = "victor"
             };
 
 
