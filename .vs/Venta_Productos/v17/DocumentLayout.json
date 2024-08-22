@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ElSapito\\Desktop\\Repositorio\\Sistemas_Inventario_venta\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D2D63533-1554-4619-98F9-D0A67E69479E}|Venta_Productos\\Venta_Productos.csproj|c:\\users\\elsapito\\desktop\\repositorio\\sistemas_inventario_venta\\venta_productos\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2D63533-1554-4619-98F9-D0A67E69479E}|Venta_Productos\\Venta_Productos.csproj|solutionrelative:venta_productos\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D2D63533-1554-4619-98F9-D0A67E69479E}|Venta_Productos\\Venta_Productos.csproj|c:\\users\\elsapito\\desktop\\repositorio\\sistemas_inventario_venta\\venta_productos\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2D63533-1554-4619-98F9-D0A67E69479E}|Venta_Productos\\Venta_Productos.csproj|solutionrelative:venta_productos\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2D63533-1554-4619-98F9-D0A67E69479E}|Venta_Productos\\Venta_Productos.csproj|c:\\users\\elsapito\\desktop\\repositorio\\sistemas_inventario_venta\\venta_productos\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2D63533-1554-4619-98F9-D0A67E69479E}|Venta_Productos\\Venta_Productos.csproj|solutionrelative:venta_productos\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D2D63533-1554-4619-98F9-D0A67E69479E}|Venta_Productos\\Venta_Productos.csproj|c:\\users\\elsapito\\desktop\\repositorio\\sistemas_inventario_venta\\venta_productos\\views\\clienteproveedor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2D63533-1554-4619-98F9-D0A67E69479E}|Venta_Productos\\Venta_Productos.csproj|solutionrelative:venta_productos\\views\\clienteproveedor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2D63533-1554-4619-98F9-D0A67E69479E}|Venta_Productos\\Venta_Productos.csproj|c:\\users\\elsapito\\desktop\\repositorio\\sistemas_inventario_venta\\venta_productos\\service\\productosservicios\\command\\crearproductocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2D63533-1554-4619-98F9-D0A67E69479E}|Venta_Productos\\Venta_Productos.csproj|solutionrelative:venta_productos\\service\\productosservicios\\command\\crearproductocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\ElSapito\\Desktop\\Repositorio\\Sistemas_Inventario_venta\\Venta_Productos\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Venta_Productos\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\ElSapito\\Desktop\\Repositorio\\Sistemas_Inventario_venta\\Venta_Productos\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Venta_Productos\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T02:47:33.15Z",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ElSapito\\Desktop\\Repositorio\\Sistemas_Inventario_venta\\Venta_Productos\\Views\\ClienteProveedor\\Index.cshtml",
+              "RelativeDocumentMoniker": "Venta_Productos\\Views\\ClienteProveedor\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ElSapito\\Desktop\\Repositorio\\Sistemas_Inventario_venta\\Venta_Productos\\Views\\ClienteProveedor\\Index.cshtml",
+              "RelativeToolTip": "Venta_Productos\\Views\\ClienteProveedor\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T04:46:17.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\ElSapito\\Desktop\\Repositorio\\Sistemas_Inventario_venta\\Venta_Productos\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Venta_Productos\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\ElSapito\\Desktop\\Repositorio\\Sistemas_Inventario_venta\\Venta_Productos\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Venta_Productos\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "DocumentIndex": 0,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\ElSapito\\Desktop\\Repositorio\\Sistemas_Inventario_venta\\Venta_Productos\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "Venta_Productos\\Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\ElSapito\\Desktop\\Repositorio\\Sistemas_Inventario_venta\\Venta_Productos\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "Venta_Productos\\Controllers\\ProductoController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T02:47:20.53Z",
+              "WhenOpened": "2024-08-22T04:40:38.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CrearProductoCommand.cs",
+              "DocumentMoniker": "C:\\Users\\ElSapito\\Desktop\\Repositorio\\Sistemas_Inventario_venta\\Venta_Productos\\Service\\ProductosServicios\\Command\\CrearProductoCommand.cs",
+              "RelativeDocumentMoniker": "Venta_Productos\\Service\\ProductosServicios\\Command\\CrearProductoCommand.cs",
+              "ToolTip": "C:\\Users\\ElSapito\\Desktop\\Repositorio\\Sistemas_Inventario_venta\\Venta_Productos\\Service\\ProductosServicios\\Command\\CrearProductoCommand.cs",
+              "RelativeToolTip": "Venta_Productos\\Service\\ProductosServicios\\Command\\CrearProductoCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T04:40:28.512Z",
               "EditorCaption": ""
             }
           ]

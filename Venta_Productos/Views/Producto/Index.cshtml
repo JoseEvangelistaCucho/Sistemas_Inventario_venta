@@ -1,9 +1,14 @@
 ﻿
 
 <style>
-    /********** POSIBLES GLOBALES*****************/
+    /********** POSIBLES GLOBALES******************/
 
     .contenedor-general-vista {
+        overflow-y: scroll;
+        flex: 1;
+    }
+
+    .contenedor-vista-detalle {
         margin: 2vh;
     }
 
@@ -11,7 +16,14 @@
         margin-bottom: 1vh;
     }
 
-
+    .detalle-producto {
+        width: calc(100% + 24px);
+        margin: -12px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
 
     .menu-container {
         position: relative;
@@ -20,7 +32,7 @@
 
     .menu-button {
         cursor: pointer;
-        font-size: 24px; /* Tamaño de los puntos */
+        font-size: 24px;
     }
 
     .menu-options {
@@ -51,144 +63,597 @@
         flex-direction: column;
     }
 
-    /*************************/
-    .componentes-inicio-final {
+    .item-list {
+        padding-left: 5vh;
+    }
+    /**************************/
+
+    .MuiGrid-container {
+        width: 100%;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
     }
 
-    .img-vista-detalle {
-        width: 10vh;
-        margin-right: 2vh;
+    .MuiGrid-spacing-xs-3 {
+        width: calc(100% + 24px);
+        margin: -12px;
     }
 
-    .contenedor-detalle-producto {
+        .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+            padding: 12px;
+        }
+
+    .MuiGrid-item {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    ._3dIl1 {
+        padding: 16px 24px;
+        margin-bottom: 12px;
+    }
+
+    .MuiPaper-root {
+        color: rgba(0, 0, 0, 0.87);
+        transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        background-color: #fff;
+    }
+
+    .MuiPaper-rounded {
+        border-radius: 8px;
+    }
+
+    .MuiPaper-elevation3 {
+        box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.0), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.0);
+    }
+
+    ._3dIl1 img {
+        border-radius: 80px;
+        width: 60px;
+        height: 60px;
+        display: block;
+    }
+
+    .MuiGrid-item {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .MuiGrid-grid-xs-true {
+        flex-grow: 1;
+        max-width: 100%;
+        flex-basis: 0;
+    }
+
+    ._3dIl1 ._9o3BH, ._3dIl1 ._3V_vX {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    .contenedor-descripcion-producto {
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
+    .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+        padding: 12px;
     }
 
-    .menu-options {
-        font-weight: bold;
-    }
-
-    .detalle-descripcion{
-        width: 20vh;
-    }
-
-    .eliminar-espacios h3,
-    .eliminar-espacios span,
-    .eliminar-espacios div,
-    .eliminar-espacios p {
-        padding: 0;
+    .MuiTypography-root {
         margin: 0;
     }
 
-    .card {
-        margin-bottom: 1vh;
+    .MuiTypography-body1 {
+        font-size: 1rem;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.00938em;
     }
 
-    .row {
-        padding: 2vh;
+    ._3dIl1 ._9o3BH .eOg94 {
+        margin-bottom: 4px;
+        font-weight: 500;
+        font-size: 16px;
+        color: rgba(0, 0, 0, .7);
     }
 
-    .contenedor-cabecera-general {
-        padding: 0.75vh;
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
     }
+
+    ._3dIl1 ._9o3BH .ta-eO {
+        color: #777;
+        font-size: 14px;
+    }
+
+        ._3dIl1 ._9o3BH .ta-eO i {
+            color: #aaa;
+            display: inline-block;
+            margin-right: 4px;
+        }
+
+    .MuiGrid-item {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    ._3dIl1 ._9o3BH, ._3dIl1 ._3V_vX {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+        padding: 12px;
+    }
+
+    .MuiTypography-root {
+        margin: 0;
+    }
+
+    .MuiTypography-button {
+        font-size: 0.875rem;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 500;
+        line-height: 1.75;
+        letter-spacing: 0.02857em;
+        text-transform: uppercase;
+    }
+
+    ._3dIl1 ._3KeyQ {
+        display: block;
+        font-size: 22px;
+        line-height: 20px;
+        font-weight: 700;
+        border-radius: 8px;
+        color: #43a047;
+        text-align: center;
+        position: relative;
+        margin-bottom: 8px;
+        padding: 2px 16px 2px 4px;
+    }
+
+
+        ._3dIl1 ._3KeyQ i {
+            font-size: 14px;
+            font-style: normal;
+        }
+
+
+        ._3dIl1 ._3KeyQ sub {
+            font-size: 14px;
+            vertical-align: sub;
+            position: absolute;
+            top: -2px;
+        }
+
+    .MuiButtonBase-root {
+        color: inherit;
+        border: 0;
+        cursor: pointer;
+        margin: 0;
+        display: inline-flex;
+        outline: 0;
+        padding: 0;
+        position: relative;
+        align-items: center;
+        user-select: none;
+        border-radius: 0;
+        vertical-align: middle;
+        -moz-appearance: none;
+        justify-content: center;
+        text-decoration: none;
+        background-color: transparent;
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .MuiButton-root {
+        color: rgba(0, 0, 0, 0.87);
+        padding: 6px 16px;
+        font-size: 0.875rem;
+        min-width: 64px;
+        box-sizing: border-box;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 500;
+        line-height: 1.75;
+        border-radius: 8px;
+        letter-spacing: 0.02857em;
+        text-transform: uppercase;
+    }
+
+    .MuiButton-contained {
+        color: rgba(0, 0, 0, 0.87);
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.0), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.0);
+        background-color: #e0e0e0;
+    }
+
+
+
+    .MuiButton-containedSizeSmall {
+        padding: 4px 10px;
+        font-size: 0.8125rem;
+    }
+
+    .MuiButton-label {
+        width: 100%;
+        display: inherit;
+        align-items: inherit;
+        justify-content: inherit;
+    }
+
+    .MuiTouchRipple-root {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        overflow: hidden;
+        position: absolute;
+        border-radius: inherit;
+        pointer-events: none;
+    }
+
+    .MuiGrid-item {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    ._3dIl1 ._25yGY {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+        padding: 12px;
+    }
+
+    .MuiButtonBase-root {
+        color: inherit;
+        border: 0;
+        cursor: pointer;
+        margin: 0;
+        display: inline-flex;
+        outline: 0;
+        padding: 0;
+        position: relative;
+        align-items: center;
+        user-select: none;
+        border-radius: 0;
+        vertical-align: middle;
+        -moz-appearance: none;
+        justify-content: center;
+        text-decoration: none;
+        background-color: transparent;
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .MuiIconButton-root {
+        flex: 0 0 auto;
+        color: rgba(0, 0, 0, 0.54);
+        padding: 12px;
+        overflow: visible;
+        font-size: 1.5rem;
+        text-align: center;
+        transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        border-radius: 50%;
+    }
+
+    .MuiIconButton-edgeEnd {
+        margin-right: -12px;
+    }
+
+    .MuiIconButton-label {
+        width: 100%;
+        display: flex;
+        align-items: inherit;
+        justify-content: inherit;
+    }
+
+
+    .MuiIcon-root {
+        width: 1em;
+        height: 1em;
+        overflow: hidden;
+        font-size: 1.5rem;
+        flex-shrink: 0;
+        user-select: none;
+    }
+
+
+
+
+
+
+
+
+
+
+    .MuiButtonBase-root {
+        color: inherit;
+        border: 0;
+        cursor: pointer;
+        margin: 0;
+        display: inline-flex;
+        outline: 0;
+        padding: 0;
+        position: relative;
+        align-items: center;
+        user-select: none;
+        border-radius: 0;
+        vertical-align: middle;
+        -moz-appearance: none;
+        justify-content: center;
+        text-decoration: none;
+        background-color: transparent;
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+
+
+
+
+    .MuiButton-root {
+        color: rgba(0, 0, 0, 0.87);
+        padding: 6px 16px;
+        font-size: 0.875rem;
+        min-width: 64px;
+        box-sizing: border-box;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 500;
+        line-height: 1.75;
+        border-radius: 8px;
+        letter-spacing: 0.02857em;
+        text-transform: uppercase;
+    }
+
+    .MuiButton-contained {
+        color: rgba(0, 0, 0, 0.87);
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.0), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.0);
+        background-color: #e0e0e0;
+    }
+
+    .MuiButton-containedSecondary {
+        color: #fff;
+        background-color: #1e88e5;
+    }
+
+    .MuiButton-containedSizeSmall {
+        padding: 4px 10px;
+        font-size: 0.8125rem;
+    }
+
+    sub, sup {
+        line-height: 1;
+    }
+
+    .componentes-inicio-final {
+        display: flex;
+    }
+
+    ._1wSS- ._1nsP_ + ._1nsP_ {
+        margin-top: 16px !important;
+    }
+
 </style>
 
 <div class="contenedor-general-vista">
+    <div class="contenedor-vista-detalle">
 
-    <div class="contenedor-cabecera-general">
-        <div class="componentes-inicio-final separador-componentes-vista">
-            <h2>Produtos</h2>
-            <button>Registrar Nuevo</button>
+        <div class="contenedor-cabecera-general">
+            <div class="componentes-inicio-final separador-componentes-vista">
+                <h4 style="    flex: 1 1 0%;">Produtos</h4>
+                <div>
+                    <button class="btn open-modal-btn">
+                        Registrar Nuevo
+                    </button>
+                    <button class="btn">
+                        <div class="menu-container">
+                            <span class="menu-button">⋮</span>
+                            <div class="menu-options">
+                                <a href="#">Opción 1</a>
+                                <a href="#">Opción 2</a>
+                                <a href="#">Opción 3</a>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
         </div>
         <div class="separador-componentes-vista">
             <input />
         </div>
     </div>
 
-    <div class="row">
-        @for (int i = 0; i < 10; i++)
-        {
-            <div class="contenedor-detalle-producto card">
-                <div>
-                    <img src="~/imagenes/perno.webp" class="img-vista-detalle" />
+    @for (int i = 0; i < 10; i++)
+    {
+        <div class="MuiPaper-root _3dIl1 MuiPaper-elevation3 MuiPaper-rounded">
+            <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3">
+                <div class="MuiGrid-root MuiGrid-item">
+                    <a href="javascript:void(0)">
+                        <img src="/assets/img/keyfact_default_image.png">
+                    </a>
                 </div>
-                <div class="contenedor-descripcion-producto">
-                    <div style="display: flex; align-items: baseline;">
-                        <div class="eliminar-espacios detalle-descripcion">
-                            <h3>
-                                Abrazadera
-                            </h3>
-                            <p>@(i)</p>
-                            <p>SIN CATEGORIA</p>
-                        </div>
-                        <div class="eliminar-espacios detalle-descripcion">
-                            <div>
-                                <span>&nbsp;</span>
-                            </div>
-                            <del>SIN DETALLE</del>
-                            <p>UNIDADES</p>
-                        </div>
-                    </div>
-
-                    <div class="item-list">
-                        <div class="item">
-                            <span class="item-name">S/ 5.00</span>
-                            <div class="menu-container">
-                                <span class="menu-button">⋮</span>
-                                <div class="menu-options">
-                                    <a href="#">Opción 1</a>
-                                    <a href="#">Opción 2</a>
-                                    <a href="#">Opción 3</a>
-                                </div>
-                            </div>
+                <div class="MuiGrid-root _9o3BH MuiGrid-item MuiGrid-grid-xs-true">
+                    <p class="MuiTypography-root eOg94 MuiTypography-body1">10 DISCO DE CORTE</p>
+                    <table class="ta-eO">
+                        <tbody>
+                            <tr>
+                                <td width="250">
+                                    <i class="mdi mdi-code-not-equal-variant"></i> 20231021105229
+                                </td>
+                                <td><i class="mdi mdi-barcode"></i> SIN CODIGO DE BARRAS</td>
+                            </tr>
+                            <tr class="_31OB4"><td><i class="mdi mdi-tag"></i> 10 DISCO DE CORTE</td><td><i class="mdi mdi-ruler"></i> UNIDADES</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="MuiGrid-root _3V_vX MuiGrid-item">
+                    <span class="MuiTypography-root _3KeyQ MuiTypography-button"><i>S/ </i>70<sub>.00</sub></span>
+                    <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-containedSizeSmall MuiButton-sizeSmall" tabindex="0" type="button">
+                        <span class="MuiButton-label">Ver stock</span><span class="MuiTouchRipple-root"></span>
+                    </button>
+                </div>
+                <div class="MuiGrid-root _25yGY MuiGrid-item">
+                    <div class="menu-container">
+                        <span class="menu-button">⋮</span>
+                        <div class="menu-options">
+                            <a href="#">Opción 1</a>
+                            <a href="#">Opción 2</a>
+                            <a href="#">Opción 3</a>
                         </div>
                     </div>
                 </div>
             </div>
-        }
-    </div>
+        </div>
+    }
 
 </div>
 
 
 <script>
-    // Añadimos un listener a todos los botones de menú
-    document.querySelectorAll('.menu-button').forEach(function (button) {
-        button.addEventListener('click', function (event) {
-            // Cerrar cualquier menú abierto
+    document.addEventListener("DOMContentLoaded", function () {
+        function createModalContent() {
+            console.log("Injecting modal content...");
+            const modalContent = `
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                <div class="card-header">
+                                    <h3 class="text-center font-weight-light my-4">Create Account</h3>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3 mb-md-0">
+                                                    <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name">
+                                                    <label for="inputFirstName">First name</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name">
+                                                    <label for="inputLastName">Last name</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com">
+                                            <label for="inputEmail">Email address</label>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3 mb-md-0">
+                                                    <input class="form-control" id="inputPassword" type="password" placeholder="Create a password">
+                                                    <label for="inputPassword">Password</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3 mb-md-0">
+                                                    <input class="form-control" id="inputPasswordConfirm" type="password" placeholder="Confirm password">
+                                                    <label for="inputPasswordConfirm">Confirm Password</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4 mb-0">
+                                            <div class="d-grid">
+                                                <a class="btn btn-primary btn-block" href="login.html">Create Account</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="card-footer text-center py-3">
+                                    <div class="small">
+                                        <a href="login.html">Have an account? Go to login</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+            // Asignar el contenido al modal
+            document.getElementById('myModal').innerHTML = modalContent;
+        }
+
+        console.log("modal : ", modalPresentacion);
+
+        // Obtener el botón que abre el modal
+        var btn = document.querySelector(".open-modal-btn");
+
+        // Obtener el botón que cierra el modal
+        //  var closeBtn = document.querySelector(".close-modal-btn");
+
+        // Cuando el usuario haga clic en el botón, se abre el modal
+        btn.onclick = function () {
+            // createModalContent();
+            modalPresentacion.classList.add("show-modal");
+        }
+
+        // Cuando el usuario haga clic en el botón de cerrar, se cierra el modal
+        /* closeBtn.onclick = function () {
+             modalPresentacion.style.display = "none";
+         }*/
+
+        // Cuando el usuario haga clic fuera del contenido del modal, se cierra el modal
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modalPresentacion.style.display = "none";
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Añadimos un listener a todos los botones de menú
+        document.querySelectorAll('.menu-button').forEach(function (button) {
+            button.addEventListener('click', function (event) {
+                // Cerrar cualquier menú abierto
+                closeAllMenus();
+
+                // Mostrar el menú del botón clicado
+                var menu = button.nextElementSibling;
+                menu.style.display = 'block';
+
+                // Evitar que el clic cierre el menú inmediatamente
+                event.stopPropagation();
+            });
+        });
+
+        // Función para cerrar todos los menús
+        function closeAllMenus() {
+            document.querySelectorAll('.menu-options').forEach(function (menu) {
+                menu.style.display = 'none';
+            });
+        }
+
+        // Cerrar el menú al hacer clic fuera de él
+        window.onclick = function () {
             closeAllMenus();
+        };
 
-            // Mostrar el menú del botón clicado
-            var menu = button.nextElementSibling;
-            menu.style.display = 'block';
 
-            // Evitar que el clic cierre el menú inmediatamente
-            event.stopPropagation();
-        });
     });
-
-    // Función para cerrar todos los menús
-    function closeAllMenus() {
-        document.querySelectorAll('.menu-options').forEach(function (menu) {
-            menu.style.display = 'none';
-        });
-    }
-
-    // Cerrar el menú al hacer clic fuera de él
-    window.onclick = function () {
-        closeAllMenus();
-    };
-
-
-
 </script>

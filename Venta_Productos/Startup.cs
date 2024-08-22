@@ -1,88 +1,82 @@
-﻿using Microsoft.AspNetCore.Server.Kestrel.Core;
-using Venta_Productos.Infrastructure;
+﻿using MediatR;
+using Microsoft.EntityFrameworkCore;
+using System.Reflection;
+using Venta_Productos.Infrastructure.Data;
+using Venta_Productos.Models;
 
-namespace Venta_Productos
+public class Startup
 {
-    public class Startup
-    {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+	public Startup(IConfiguration configuration)
+	{
+		Configuration = configuration;
+	}
 
-        public IConfiguration Configuration { get; }
+	public IConfiguration Configuration { get; }
 
-        public void ConfigureServices(IServiceCollection services)
-        {
-            string cadenaConexion = Configuration.GetConnectionString("DefaultConnection");
+	public void ConfigureServices(IServiceCollection services)
+	{
+        services.AddSingleton<ConexionBD>();
 
-            services.AddControllersWithViews();
-            services.AddHttpContextAccessor();
+        // Otros servicios
+        services.AddControllersWithViews();
+		services.AddHttpContextAccessor();
 
-            services.Configure<KestrelServerOptions>(options =>
-            {
-                options.Limits.MaxRequestBodySize = 20971520;
-            });
+		// Configuración de MediatR
+		services.AddMediatR(Assembly.GetExecutingAssembly());
 
-            // Añadir servicios de sesión
-            services.AddDistributedMemoryCache();
-            services.AddSession(options =>
-            {
-                options.IdleTimeout = TimeSpan.FromMinutes(30);
-                options.Cookie.HttpOnly = true;
-                options.Cookie.IsEssential = true;
-            });
+		// Configuración de sesión, logging, CORS, etc.
+		services.AddDistributedMemoryCache();
+		services.AddSession(options =>
+		{
+			options.IdleTimeout = TimeSpan.FromMinutes(30);
+			options.Cookie.HttpOnly = true;
+			options.Cookie.IsEssential = true;
+		});
 
-            services.AddInfrastructure(Configuration);
+		services.AddCors(options =>
+		{
+			options.AddDefaultPolicy(builder =>
+			{
+				builder.AllowAnyOrigin()
+					   .AllowAnyHeader()
+					   .AllowAnyMethod();
+			});
+		});
 
-            services.AddControllersWithViews();
-            services.AddHttpContextAccessor();
-            services.AddRazorPages();
+		services.AddLogging(logging =>
+		{
+			logging.AddEventLog();
+		});
+	}
 
-            services.AddLogging(logging =>
-            {
-                logging.AddEventLog();
-            });
+	public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+	{
+		if (env.IsDevelopment())
+		{
+			app.UseDeveloperExceptionPage();
+		}
+		else
+		{
+			app.UseExceptionHandler("/Home/Error");
+			app.UseHsts();
+		}
 
-            services.AddCors(options =>
-            {
-                options.AddDefaultPolicy(builder =>
-                {
-                    builder.AllowAnyOrigin()
-                           .AllowAnyHeader()
-                           .AllowAnyMethod();
-                });
-            });
-        }
+		app.UseCors();
+		app.UseHttpsRedirection();
+		app.UseStaticFiles();
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
-            }
+		app.UseRouting();
 
-            app.UseCors();
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
+		// Añadir el middleware de sesión
+		app.UseSession();
 
-            app.UseRouting();
+		app.UseAuthorization();
 
-            // app.UseSession(); // Añadir el middleware de sesión aquí
-
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}");
-            });
-        }
-    }
+		app.UseEndpoints(endpoints =>
+		{
+			endpoints.MapControllerRoute(
+				name: "default",
+				pattern: "{controller=Home}/{action=Index}/{id?}");
+		});
+	}
 }

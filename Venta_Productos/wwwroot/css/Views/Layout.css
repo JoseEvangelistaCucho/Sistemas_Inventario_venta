@@ -1,0 +1,1086 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+body {
+    font-family: sans-serif;
+    background-color: #eee;
+    line-height: 1;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.contendor-principal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.contenedor-elementos {
+    background-color: #555;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-vista-opcion {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: #f3f3f3;
+    margin: auto;
+    max-width: 1440px;
+    min-width: 1280px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.opciones-app {
+    flex-direction: column;
+    background-color: #334fba;
+    width: 400px;
+    min-width: 400px;
+    z-index: 20;
+}
+
+.contenedor-vista {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.opciones-app, .contenedor-vista {
+    z-index: 10;
+    flex-direction: column;
+}
+
+/**/
+
+
+.MuiAppBar-root {
+    width: 100%;
+    display: flex;
+    z-index: 1100;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
+}
+
+.MuiAppBar-positionFixed {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+}
+
+@media print {
+    .MuiAppBar-positionFixed {
+        position: absolute;
+    }
+}
+
+.MuiAppBar-positionAbsolute {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+}
+
+.MuiAppBar-positionSticky {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: sticky;
+}
+
+.MuiAppBar-positionStatic {
+    position: static;
+}
+
+.MuiAppBar-positionRelative {
+    position: relative;
+}
+
+.MuiAppBar-colorDefault {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #f5f5f5;
+}
+
+.MuiAppBar-colorPrimary {
+    color: #fff;
+    background-color: #334fba;
+}
+
+.MuiAppBar-colorSecondary {
+    color: #fff;
+    background-color: #1e88e5;
+}
+
+.MuiAppBar-colorInherit {
+    color: inherit;
+}
+
+.MuiAppBar-colorTransparent {
+    color: inherit;
+    background-color: transparent;
+}
+
+
+
+.MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+}
+
+    .MuiIconButton-root:hover {
+        background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    .MuiIconButton-root.Mui-disabled {
+        color: rgba(0, 0, 0, 0.26);
+        background-color: transparent;
+    }
+
+@media (hover: none) {
+    .MuiIconButton-root:hover {
+        background-color: transparent;
+    }
+}
+
+.MuiIconButton-edgeStart {
+    margin-left: -12px;
+}
+
+.MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+    margin-left: -3px;
+}
+
+.MuiIconButton-edgeEnd {
+    margin-right: -12px;
+}
+
+.MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+    margin-right: -3px;
+}
+
+.MuiIconButton-colorInherit {
+    color: inherit;
+}
+
+.MuiIconButton-colorPrimary {
+    color: #334fba;
+}
+
+    .MuiIconButton-colorPrimary:hover {
+        background-color: rgba(51, 79, 186, 0.04);
+    }
+
+@media (hover: none) {
+    .MuiIconButton-colorPrimary:hover {
+        background-color: transparent;
+    }
+}
+
+.MuiIconButton-colorSecondary {
+    color: #1e88e5;
+}
+
+    .MuiIconButton-colorSecondary:hover {
+        background-color: rgba(30, 136, 229, 0.04);
+    }
+
+@media (hover: none) {
+    .MuiIconButton-colorSecondary:hover {
+        background-color: transparent;
+    }
+}
+
+.MuiIconButton-sizeSmall {
+    padding: 3px;
+    font-size: 1.125rem;
+}
+
+.MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+}
+
+.MuiToolbar-root {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.MuiToolbar-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+@media (min-width:600px) {
+    .MuiToolbar-gutters {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+.MuiToolbar-regular {
+    min-height: 56px;
+}
+
+@media (min-width:0px) and (orientation: landscape) {
+    .MuiToolbar-regular {
+        min-height: 48px;
+    }
+}
+
+@media (min-width:600px) {
+    .MuiToolbar-regular {
+        min-height: 64px;
+    }
+}
+
+.MuiToolbar-dense {
+    min-height: 48px;
+}
+
+
+
+.rcs-custom-scroll {
+    min-height: 0;
+    min-width: 0
+}
+
+    .rcs-custom-scroll .rcs-outer-container {
+        overflow: hidden
+    }
+
+        .rcs-custom-scroll .rcs-outer-container .rcs-positioning {
+            position: relative
+        }
+
+        .rcs-custom-scroll .rcs-outer-container:hover .rcs-custom-scrollbar {
+            opacity: 1;
+            transition-duration: .2s
+        }
+
+    .rcs-custom-scroll .rcs-inner-container {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch
+    }
+
+        .rcs-custom-scroll .rcs-inner-container:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 0;
+            background-image: linear-gradient(180deg,rgba(0,0,0,.2) 0,rgba(0,0,0,.05) 60%,transparent);
+            pointer-events: none;
+            transition: height .1s ease-in;
+            will-change: height
+        }
+
+        .rcs-custom-scroll .rcs-inner-container.rcs-content-scrolled:after {
+            height: 5px;
+            transition: height .15s ease-out
+        }
+
+    .rcs-custom-scroll.rcs-scroll-handle-dragged .rcs-inner-container {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+
+    .rcs-custom-scroll .rcs-custom-scrollbar {
+        position: absolute;
+        height: 100%;
+        width: 6px;
+        right: 3px;
+        opacity: 0;
+        z-index: 1;
+        transition: opacity .4s ease-out;
+        padding: 6px 0;
+        box-sizing: border-box;
+        will-change: opacity;
+        pointer-events: none
+    }
+
+        .rcs-custom-scroll .rcs-custom-scrollbar.rcs-custom-scrollbar-rtl {
+            right: auto;
+            left: 3px
+        }
+
+    .rcs-custom-scroll.rcs-scroll-handle-dragged .rcs-custom-scrollbar {
+        opacity: 1
+    }
+
+    .rcs-custom-scroll .rcs-custom-scroll-handle {
+        position: absolute;
+        width: 100%;
+        top: 0
+    }
+
+    .rcs-custom-scroll .rcs-inner-handle {
+        height: calc(100% - 12px);
+        margin-top: 6px;
+        background-color: rgba(78,183,245,.7);
+        border-radius: 3px
+    }
+
+._1wSS- {
+    align-items: center;
+    padding: 8px 24px 0;
+    z-index: 10;
+}
+
+    ._1wSS- ._2OEos {
+        overflow: hidden;
+        text-align: center;
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: center;
+    }
+
+        ._1wSS- ._2OEos img {
+            width: 100px;
+            height: 100px;
+            border-radius: 80px;
+            display: block;
+        }
+
+    ._1wSS- ._1nsP_ {
+        background-color: #4964cd;
+        margin-bottom: 0;
+        margin-top: 0;
+        border-radius: 16px;
+        border: 1px solid #5972d1;
+    }
+
+
+
+select {
+    color: #fff;
+    padding-top: 27px;
+    padding-bottom: 10px;
+}
+
+.MuiSelect-iconOutlined {
+    right: 7px;
+}
+
+.MuiSelect-icon {
+    top: calc(50% - 12px);
+    color: rgba(0, 0, 0, 0.54);
+    right: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.MuiSelect-select:not([multiple]) option, .MuiSelect-select:not([multiple]) optgroup {
+    background-color: #fff;
+}
+
+select option {
+    background-color: #334fba !important;
+    color: #fff !important;
+}
+
+.MuiSelect-icon {
+    top: calc(50% - 12px);
+    color: rgba(0, 0, 0, 0.54);
+    right: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.MuiOutlinedInput-root {
+    position: relative;
+    border-radius: 8px;
+}
+
+.MuiInputBase-fullWidth {
+    width: 100%;
+}
+
+.MuiInputBase-root {
+    color: rgba(0, 0, 0, 0.87);
+    cursor: text;
+    display: inline-flex;
+    position: relative;
+    font-size: 1rem;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.1876em;
+    letter-spacing: 0.00938em;
+}
+
+._1wSS- ._1nsP_ label {
+    color: #ddd !important;
+    padding-top: 22px;
+}
+
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+    transform: translate(14px, -6px) scale(0.75);
+}
+
+.MuiInputLabel-outlined {
+    z-index: 1;
+    transform: translate(14px, 20px) scale(1);
+    pointer-events: none;
+}
+
+.MuiInputLabel-animated {
+    transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms, transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+}
+
+.MuiInputLabel-shrink {
+    transform: translate(0, 1.5px) scale(0.75);
+    transform-origin: top left;
+}
+
+.MuiInputLabel-formControl {
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translate(0, 24px) scale(1);
+}
+
+.MuiInputLabel-root {
+    display: block;
+    transform-origin: top left;
+}
+
+.MuiFormLabel-root {
+    color: rgba(0, 0, 0, 0.54);
+    padding: 0;
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.00938em;
+}
+
+._1wSS- ._1nsP_ {
+    background-color: #4964cd;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-radius: 16px;
+    border: 1px solid #5972d1;
+}
+
+.MuiFormControl-fullWidth {
+    width: 100%;
+}
+
+.MuiFormControl-root {
+    border: 0;
+    margin: 0;
+    display: inline-flex;
+    padding: 0;
+    position: relative;
+    min-width: 0;
+    flex-direction: column;
+    vertical-align: top;
+}
+
+._1wSS- ._2APJ5 {
+    flex: 1;
+}
+
+.MuiOutlinedInput-root {
+    position: relative;
+    border-radius: 8px;
+}
+
+.MuiInputBase-fullWidth {
+    width: 100%;
+}
+
+.MuiInputBase-root {
+    color: rgba(0, 0, 0, 0.87);
+    cursor: text;
+    display: inline-flex;
+    position: relative;
+    font-size: 1rem;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.1876em;
+    letter-spacing: 0.00938em;
+}
+
+._1wSS- ._1nsP_ input, ._1wSS- ._1nsP_ select {
+    color: #fff;
+    padding-top: 27px !important;
+    padding-bottom: 10px !important;
+}
+
+.MuiSelect-outlined.MuiSelect-outlined {
+    padding-right: 32px;
+}
+
+.MuiSelect-select.MuiSelect-select {
+    padding-right: 24px;
+}
+
+.MuiSelect-outlined {
+    border-radius: 8px;
+}
+
+.MuiSelect-select {
+    cursor: pointer;
+    min-width: 16px;
+    user-select: none;
+    border-radius: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.MuiOutlinedInput-input {
+    padding: 18.5px 14px !important;
+}
+
+.MuiInputBase-input {
+    font: inherit;
+    color: currentColor;
+    width: 100%;
+    border: 0;
+    height: 1.1876em;
+    margin: 0;
+    display: block;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+    animation-name: mui-auto-fill-cancel;
+    letter-spacing: inherit;
+    animation-duration: 10ms;
+    -webkit-tap-highlight-color: transparent;
+}
+
+._1wSS- ._1nsP_ fieldset {
+    border: none !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border-color: rgba(0, 0, 0, 0.23);
+}
+
+.jss1 {
+    top: -5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0 8px;
+    overflow: hidden;
+    position: absolute;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.jss4 {
+    max-width: 1000px;
+    transition: max-width 100ms cubic-bezier(0.0, 0, 0.2, 1) 50ms;
+}
+
+.jss3 {
+    width: auto;
+    height: 11px;
+    display: block;
+    padding: 0;
+    font-size: 0.75em;
+    max-width: 0.01px;
+    text-align: left;
+    transition: max-width 50ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    visibility: hidden;
+}
+
+    .jss3 > span {
+        display: inline-block;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+.contenedor-vista {
+    position: relative;
+    display: flex;
+}
+
+._2_bIC {
+    min-width: 0;
+    min-height: 0;
+    flex: 1;
+    padding: 24px;
+    position: relative;
+}
+
+
+.MuiGrid-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.MuiGrid-spacing-xs-2 {
+    width: calc(100% + 16px);
+    margin: -8px;
+}
+
+    .MuiGrid-spacing-xs-2 > .MuiGrid-item {
+        padding: 8px;
+    }
+
+.MuiGrid-grid-xs-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+}
+
+.MuiGrid-item {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+._3JcWh._1A_nb {
+    flex-direction: row;
+    height: 78px;
+}
+
+._3JcWh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 108px;
+    position: relative;
+    border-radius: 16px;
+    background-color: #2b56ab;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+}
+
+    ._3JcWh ._3llwc span {
+        font-size: 48px;
+        color: hsla(0, 0%, 100%, .5);
+    }
+
+.MuiIcon-root {
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.material-icons {
+    line-height: 1 !important;
+}
+
+._3JcWh .htOpE {
+    margin-top: 8px;
+}
+
+    ._3JcWh .htOpE span {
+        color: #eee;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        display: block;
+        padding: 0 12px;
+    }
+
+._3JcWh .htOpE {
+    margin-top: 8px;
+}
+
+.MuiGrid-grid-xs-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+}
+
+._1qOU1 .rcs-inner-handle {
+    background-color: hsla(0, 0%, 100%, .3);
+}
+
+
+
+._2cmNS, ._1qOU1 {
+    position: relative;
+    display: flex;
+}
+
+._1qOU1 {
+    flex-direction: column;
+    background-color: #334fba;
+    width: 400px;
+    min-width: 400px;
+    z-index: 20;
+}
+
+._ROQQ img {
+    margin-left: -8px;
+    display: block;
+}
+
+._ROQQ ._3XArx {
+    flex: 1;
+}
+
+.MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+}
+
+
+.MuiIconButton-edgeEnd {
+    margin-right: -12px;
+}
+
+.MuiIconButton-colorInherit {
+    color: inherit;
+}
+
+.MuiTouchRipple-root {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.modal-presentacion {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    z-index: 1055;
+    display: none;
+    width: 100%;
+}
+
+.show-modal {
+    display: block !important;
+    position: fixed;
+}
+
+.form-control {
+    display: block;
+    width: 80%;
+}
+
+.contenedor-principal-modal {
+    position: fixed;
+    z-index: 1300;
+    inset: 0px;
+}
+.contenedor-elementos-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contendor-cabecera-cuerpo-modal {
+    display: flex;
+    flex-direction: column;
+    width: 900px !important;
+    max-width: 900px !important;
+}
+.contenedor-cabecera-header {
+    background: #334fba;
+}
+
+.titulo-header-modal {
+    display: flex;
+    min-height: 64px;
+}
+
+.btn-close-modal {
+    padding: 12px;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    position: relative;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.header-principal-modal {
+    width: 100%;
+    display: flex;
+    z-index: 1100;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: row;
+}
+.btn-option-modal {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    .btn-option-modal button span {
+        font-size: 2rem;
+    }
+.contenedor-principal-modal-producto {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: auto;
+    background: white;
+}
+
+.contenedor-elementos-modal-producto {
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+    position: relative;
+}
+.contenedor-elementos-modal {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: calc(100% + 16px);
+    margin: -8px;
+}
+.contendor-ingreso-informacion {
+    padding: 8px;
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+    width: calc(100% + 16px);
+    margin: -8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .contendor-ingreso-informacion > .contenedor-input-registro {
+        padding: 8px;
+        flex-grow: 0;
+        max-width: 50%;
+        flex-basis: 50%;
+    }
+
+.contenedor-imagen-producto {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.form-floating > input {
+    width: 100%;
+}
+
+.contendor-input-completo {
+    max-width: 100% !important;
+    flex-basis: 100% !important;
+}
+
+.opcion-detalle-modal {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-modal-general {
+    padding: 6px 12px;
+    overflow: hidden;
+    position: relative;
+    font-size: 0.875rem;
+    max-width: 264px;
+    min-width: 72px;
+    box-sizing: border-box;
+    min-height: 48px;
+    text-align: center;
+    flex-shrink: 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    white-space: normal;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    /**********/
+
+    color: white;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.image-preview {
+    width: 250px;
+    height: 200px;
+    border: 2px solid #dddddd;
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+}
+
+    .image-preview img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+.custom-file-upload {
+    padding: 15px 12px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    float: inline-end;
+    border-radius: 50%;
+}
+
+/* Ocultar el input[type="file"] nativo */
+input[type="file"] {
+    display: none;
+}
+
+.tbl-nuevo-prodcuto {
+    width: 100%;
+}
+    .tbl-nuevo-prodcuto th {
+        font-size: 0.875rem;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: 700;
+        line-height: 1.5rem;
+        display: table-cell;
+        padding: 16px;
+        text-align: left;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        border-bottom: 1px solid rgba(224, 224, 224, 1);
+        letter-spacing: 0.01071em;
+        vertical-align: inherit;
+    }
+
+.th-nuevo-producto {
+
+    text-align: right !important;
+}
+
+.btn-agregar-producto {
+    color: #1e88e5;
+    border: none;
+}
+.btn-eliminar-producto-agregado {
+    color: gray;
+    border: none;
+    float: inline-end;
+}
+.tbl-nuevo-prodcuto input, .tbl-nuevo-prodcuto select {
+    width: 100%;
+    /*padding: 12.5px 14px;*/
+    font-size: 0.90rem;
+}
+
+.tbl-nuevo-prodcuto select {
+    -webkit-appearance: auto;
+}
+.tbl-nuevo-prodcuto td {
+    padding-right: 8px;
+}
