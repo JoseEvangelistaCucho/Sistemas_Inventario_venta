@@ -42,8 +42,7 @@
               "RelativeToolTip": "Venta_Productos\\Views\\ClienteProveedor\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-22T04:46:17.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T04:46:17.559Z"
             },
             {
               "$type": "Document",
@@ -53,7 +52,7 @@
               "RelativeDocumentMoniker": "Venta_Productos\\Controllers\\ProductoController.cs",
               "ToolTip": "C:\\Users\\ElSapito\\Desktop\\Repositorio\\Sistemas_Inventario_venta\\Venta_Productos\\Controllers\\ProductoController.cs",
               "RelativeToolTip": "Venta_Productos\\Controllers\\ProductoController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACUAAAAFAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T04:40:38.178Z",
               "EditorCaption": ""
@@ -68,8 +67,7 @@
               "RelativeToolTip": "Venta_Productos\\Service\\ProductosServicios\\Command\\CrearProductoCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T04:40:28.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T04:40:28.512Z"
             }
           ]
         }
