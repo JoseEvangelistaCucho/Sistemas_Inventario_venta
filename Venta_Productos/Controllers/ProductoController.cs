@@ -33,7 +33,7 @@ namespace Venta_Productos.Controllers
                 CrearProductoCommand request = new CrearProductoCommand();
 
                 Response<bool> result = await _mediator.Send(request);
-				///hola
+				///holapeeee
 				if (result.Data)
 				{
 					return RedirectToAction(nameof(Index));
