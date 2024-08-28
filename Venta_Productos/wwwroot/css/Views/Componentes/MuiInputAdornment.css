@@ -1,0 +1,24 @@
+﻿.MuiInputAdornment-root {
+    height: 0.01em;
+    display: flex;
+    max-height: 2em;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.MuiInputAdornment-filled.MuiInputAdornment-positionStart:not(.MuiInputAdornment-hiddenLabel) {
+    margin-top: 16px;
+}
+
+.MuiInputAdornment-positionStart {
+    margin-right: 8px;
+}
+
+.MuiInputAdornment-positionEnd {
+    margin-left: 8px;
+}
+
+.MuiInputAdornment-disablePointerEvents {
+    pointer-events: none;
+}
+

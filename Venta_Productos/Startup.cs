@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using Venta_Productos.Infrastructure.Data;
 using Venta_Productos.Models;
+using Venta_Productos.Service.ProductosServicios;
 
 public class Startup
 {
@@ -16,7 +17,8 @@ public class Startup
 	public void ConfigureServices(IServiceCollection services)
 	{
         services.AddSingleton<ConexionBD>();
-
+        services.AddSingleton<ProductoSC>();
+        
         // Otros servicios
         services.AddControllersWithViews();
 		services.AddHttpContextAccessor();

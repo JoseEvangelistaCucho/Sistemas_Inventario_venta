@@ -2,4 +2,576 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+
+    ViewData["title"] = "ventas";
 }
+<link rel="stylesheet" href="~/css/Views/Producto.css" asp-append-version="true" />
+
+
+<style>
+
+    .form-floating > input {
+        background: none;
+    }
+</style>
+
+<div class="_2cmNS">
+    <div class="BuYKS">
+        <header class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorInherit _2x8Ui MuiPaper-elevation1">
+            <div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters">
+                <h6 class="MuiTypography-root MuiTypography-h6 MuiTypography-colorInherit" style="flex: 1 1 0%;">Nueva venta</h6>
+                <div style="flex: 1 1 0%;"></div>
+                <label class="MuiFormControlLabel-root" style="margin-right: 0px;">
+                    <span id="checkboxProforma" class="MuiButtonBase-root MuiIconButton-root jss5 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary" aria-disabled="false">
+                        <span class="MuiIconButton-label">
+                            <input id="checkboxProformaInput" class="jss4" type="checkbox" data-indeterminate="false" value="">
+                            <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                <path id="checkboxPath" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path>
+                            </svg>
+                        </span>
+                        <span class="MuiTouchRipple-root"></span>
+                    </span>
+
+                    <span class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1">PROFORMA</span>
+                </label>
+            </div><div class="MuiGrid-root _2UjNK MuiGrid-container MuiGrid-spacing-xs-2">
+                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6">
+                    <div class="_24vnk">
+                        <div class="MuiFormControl-root MuiTextField-root v10PD MuiFormControl-fullWidth">
+                            <div class="contenedor-input-registro">
+                                <div class="form-floating">
+                                    <input name="Cliente" class="form-control" type="text" placeholder="">
+                                    <label>Cliente</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3">
+                    <div class="MuiFormControl-root MuiTextField-root v10PD MuiFormControl-fullWidth">
+                        <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled" data-shrink="true">Fecha de emisión</label>
+                        <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd">
+                            <input aria-invalid="false" placeholder="01/12/2018" readonly="" type="text" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd" value="22/08/2024">
+                            <div class="MuiInputAdornment-root MuiInputAdornment-positionEnd">
+                                <button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button">
+                                    <span class="MuiIconButton-label">
+                                        <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z">
+                                            </path>
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                        </svg>
+                                    </span><span class="MuiTouchRipple-root"></span>
+                                </button>
+                            </div>
+                            <fieldset aria-hidden="true" class="jss1 MuiOutlinedInput-notchedOutline">
+                                <legend class="jss3 jss4">
+                                    <span>Fecha de emisión</span>
+                                </legend>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3">
+                    <div class="MuiFormControl-root MuiTextField-root v10PD MuiFormControl-fullWidth">
+                        @* <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined" data-shrink="false">Fecha de vcto</label>
+                        <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd">
+                        <input aria-invalid="false" placeholder="01/12/2018" readonly="" type="text" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd" value="">
+                        <div class="MuiInputAdornment-root MuiInputAdornment-positionEnd">
+                        <button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button">
+                        <span class="MuiIconButton-label">
+                        <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path>
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        </svg>
+                        </span>
+                        <span class="MuiTouchRipple-root"></span>
+                        </button>
+                        </div>
+                        <fieldset aria-hidden="true" class="jss1 MuiOutlinedInput-notchedOutline">
+                        <legend class="jss3">
+                        <span>Fecha de vcto</span>
+                        </legend>
+                        </fieldset>
+                        </div>*@
+                    </div>
+                </div>
+                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4">
+                    <div class="MuiFormControl-root MuiTextField-root v10PD MuiFormControl-fullWidth">
+                        <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled" data-shrink="true">Tipo de comprobante</label>
+                        <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl">
+                            <input aria-invalid="false" readonly="" type="text" class="MuiInputBase-input MuiOutlinedInput-input" value="BOLETA DE VENTA ELECTRÓNICA">
+                            <fieldset aria-hidden="true" class="jss1 MuiOutlinedInput-notchedOutline">
+                                <legend class="jss3 jss4">
+                                    <span>Tipo de comprobante</span>
+                                </legend>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2">
+                    <div class="MuiFormControl-root MuiTextField-root v10PD MuiFormControl-fullWidth">
+                        <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled" data-shrink="true">Serie</label>
+                        <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl">
+                            <select class="MuiSelect-root MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input" aria-invalid="false" readonly="">
+                                <option value="" disabled=""></option>
+                                <option value="BB01">BB01</option>
+                            </select>
+                            <svg class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M7 10l5 5 5-5z"></path>
+                            </svg>
+                            <fieldset aria-hidden="true" class="jss1 MuiOutlinedInput-notchedOutline">
+                                <legend class="jss3 jss4">
+                                    <span>Serie</span>
+                                </legend>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3">
+                    <div class="MuiFormControl-root MuiTextField-root v10PD MuiFormControl-fullWidth">
+                        <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled" data-shrink="true">Tipo de operación</label>
+                        <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl">
+                            <input aria-invalid="false" readonly="" type="text" class="MuiInputBase-input MuiOutlinedInput-input" value="VENTA INTERNA">
+                            <fieldset aria-hidden="true" class="jss1 MuiOutlinedInput-notchedOutline">
+                                <legend class="jss3 jss4">
+                                    <span>Tipo de operación</span>
+                                </legend>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3">
+                    <div class="MuiFormControl-root MuiTextField-root v10PD MuiFormControl-fullWidth">
+                        <div class="contenedor-input-registro">
+                            <div class="form-floating">
+                                <input name="Descuento" class="form-control descuento" type="text" placeholder="">
+                                <label>Dscto. global (%)</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="MuiFormControl-root MuiTextField-root v10PD MuiFormControl-fullWidth">
+                    <div class="contenedor-input-registro">
+                        <div class="form-floating ">
+                            <input name="Observaciones" class="form-control" type="text" placeholder="">
+                            <label>Observaciones</label>
+                        </div>
+                    </div>
+                </div>
+                @*    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-item">
+                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2">
+                <div class="MuiBadge-root" style="display: flex;">
+                <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-fullWidth" tabindex="0" type="button">
+                <span class="MuiButton-label">Placa</span>
+                <span class="MuiTouchRipple-root"></span>
+                </button>
+                <span class="MuiBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorSecondary MuiBadge-invisible">✓</span>
+                </div>
+                </div>
+                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2">
+                <div class="MuiBadge-root" style="display: flex;">
+                <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-fullWidth" tabindex="0" type="button">
+                <span class="MuiButton-label">O. Compra</span>
+                <span class="MuiTouchRipple-root"></span>
+                </button>
+                <span class="MuiBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorSecondary MuiBadge-invisible">✓</span>
+                </div>
+                </div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2">
+                <div class="MuiBadge-root" style="display: flex;">
+                <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-fullWidth" tabindex="0" type="button">
+                <span class="MuiButton-label">G. Remisión</span>
+                <span class="MuiTouchRipple-root"></span>
+                </button>
+                <span class="MuiBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorSecondary MuiBadge-invisible">0</span>
+                </div>
+                </div>
+                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2">
+                <div class="MuiBadge-root" style="display: flex;">
+                <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-fullWidth" tabindex="0" type="button">
+                <span class="MuiButton-label">Observaciones</span>
+                <span class="MuiTouchRipple-root"></span>
+                </button>
+                <span class="MuiBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorSecondary MuiBadge-invisible">✓</span>
+                </div>
+                </div>
+                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2">
+                <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-fullWidth" tabindex="0" type="button">
+                <span class="MuiButton-label">Cond. Pago</span>
+                <span class="MuiTouchRipple-root"></span>
+                </button>
+                </div>
+                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2">
+                <div class="MuiBadge-root" style="display: flex;">
+                <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-fullWidth" tabindex="0" type="button">
+                <span class="MuiButton-label">
+                OTROS<span class="MuiButton-endIcon MuiButton-iconSizeMedium">
+                <span class="material-icons MuiIcon-root mdi mdi-menu" aria-hidden="true"></span>
+                </span>
+                </span>
+                <span class="MuiTouchRipple-root"></span>
+                </button>
+                <span class="MuiBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorPrimary">NUEVO</span>
+                </div>
+                </div>
+                </div>*@
+            </div>
+        </header>
+        <div class="_2Lir3">
+            <div id="selectedItemsContainer" @*style="flex: 1 1 0%; display: flex; align-items: center; justify-content: center;"*@ class="_14Bl9">
+            </div>
+        </div>
+        <div class="MuiPaper-root _1g3Qr MuiPaper-elevation4 MuiPaper-rounded">
+            <div class="MuiPaper-root _1ZpvQ MuiPaper-elevation0">
+                <div class="MuiInputBase-root _2X09t MuiInputBase-fullWidth MuiInputBase-adornedEnd">
+                    <input id="searchInput" placeholder="Buscar producto..." type="search" class="MuiInputBase-input MuiInputBase-inputAdornedEnd MuiInputBase-inputTypeSearch" value="">
+                    <span class="material-icons MuiIcon-root mdi mdi-magnify MuiIcon-colorDisabled" aria-hidden="true"></span>
+                </div>
+                <div id="resultsContainer" class="MuiPaper-root _3-JW_ _1gLC- MuiPaper-elevation0">
+                </div>
+            </div>
+            <div style="padding: 12px 24px 24px;">
+                <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2">
+                    <div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-6">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12">
+                            <div class="_2zSgD">
+                                <b>TOTAL</b>
+                                <span id="totalMonto"> 0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contenedor-procesamiento" class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-item MuiGrid-grid-xs-true">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6">
+                            <button class="MuiButtonBase-root MuiButton-root MuiButton-outlined _2yyBa MuiButton-outlinedSecondary Mui-disabled MuiButton-fullWidth Mui-disabled" tabindex="-1" type="button" disabled="">
+                                <span class="MuiButton-label">Vista previa</span>
+                            </button>
+                        </div>
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6">
+                            <button id="btn-procesar" class="MuiButtonBase-root MuiButton-root MuiButton-contained _2yyBa MuiButton-containedSecondary Mui-disabled MuiButton-fullWidth Mui-disabled" tabindex="-1" type="button" disabled="">
+                                <span class="MuiButton-label">Procesar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    const resultsContainer = document.getElementById('resultsContainer');
+    const inputBusqueda = document.getElementById('searchInput');
+    var listaCodigos = [];
+
+    inputBusqueda.addEventListener('input', function () {
+        let query = this.value;
+
+        // Simular una consulta al servidor (puedes reemplazar esto con una llamada AJAX)
+        if (query.length > 0) {
+            fetchResults(query);
+            resultsContainer.classList.remove('_1gLC-');
+        } else {
+            clearResults();
+            resultsContainer.classList.add('_1gLC-');
+        }
+    });
+
+    function fetchResults(query) {
+
+        const filteredResults = null;
+
+        fetch("@Url.Action("ConsultarProductos", "Producto")", {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'id': inputBusqueda.value  // Aquí enviamos el valor en el encabezado
+            }
+        })
+            .then(response => response.json())
+            .then(data => {
+                // Aquí puedes procesar los productos, como renderizarlos en la interfaz
+                renderResults(data);
+
+            })
+            .catch(error => console.error('Error fetching products:', error));
+
+        // Filtrar resultados simulados
+        // const filteredResults = simulatedResults.filter(item => item.nombre.toLowerCase().includes(query.toLowerCase()));
+
+        // Renderizar los resultados
+        //renderResults(filteredResults);
+    }
+
+    function renderResults(results) {
+        resultsContainer.innerHTML = ''; // Limpiar resultados anteriores
+
+        results.forEach(result => {
+            const resultItem = document.createElement('div');
+            resultItem.classList.add('MuiButtonBase-root', '_1QOYR');
+            resultItem.setAttribute('tabindex', '0');
+            resultItem.setAttribute('role', 'button');
+            resultItem.setAttribute('aria-disabled', 'false');
+
+            resultItem.innerHTML = `
+                                            <div class="MuiGrid-root MuiGrid-container">
+                                                <div class="MuiGrid-root MuiGrid-item">
+                                                            <img  src="data:image/jpeg;base64,${result.ruta}"  width="70" height="70">
+                                                </div>
+                                                <div class="MuiGrid-root VIIDS MuiGrid-item MuiGrid-grid-xs-true">
+                                                        <p class="MuiTypography-root _1Pe71 MuiTypography-body2 MuiTypography-noWrap MuiTypography-gutterBottom" title="${result.nombreDescripcion}">
+                                                            ${result.nombreDescripcion}
+                                                    </p>
+                                                    <p class="MuiTypography-root AecNy MuiTypography-body2 MuiTypography-noWrap">
+                                                                        ${result.categoria.descripcion} » ${result.categoria.categoriaID}
+                                                    </p>
+                                                </div>
+                                                <div class="MuiGrid-root MuiGrid-item" style="width: 140px; padding: 2px;">
+                                                    <span class="MuiTypography-root _2f9St MuiTypography-button">
+                                                            <i>S/ </i>${result.precioVenta.toFixed(2)}
+                                                    </span>
+                                                    <button class="MuiButtonBase-root MuiButton-root MuiButton-outlined _35jOl MuiButton-outlinedPrimary MuiButton-outlinedSizeSmall MuiButton-sizeSmall MuiButton-fullWidth" tabindex="0" type="button">
+                                                        <span class="MuiButton-label">Ver stock</span>
+                                                        <span class="MuiTouchRipple-root"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <span class="MuiTouchRipple-root"></span>
+                                        `;
+
+            // Añadir event listener para cuando se hace clic en el elemento
+            resultItem.addEventListener('click', function () {
+                addToSelectedItems(result);
+            });
+
+            resultsContainer.appendChild(resultItem);
+        });
+    }
+
+    function clearResults() {
+        resultsContainer.innerHTML = '';
+    }
+
+    const contenedorProcesamiento = document.getElementById('contenedor-procesamiento');
+
+    const botonesProcesamiento = contenedorProcesamiento.querySelectorAll('button');
+
+
+
+    function addToSelectedItems(result) {
+
+        // Recorrer los botones y eliminar la clase 'btn-primary'
+        botonesProcesamiento.forEach(button => {
+            button.classList.remove('Mui-disabled');
+            button.removeAttribute("disabled");
+        });
+
+        const selectedContainer = document.getElementById('selectedItemsContainer');
+
+        if (!listaCodigos.includes(result.codigoUnico)) {
+            listaCodigos.push(result.codigoUnico);
+
+            // Crear la estructura con la nueva clase y contenido específico
+            const selectedItem = document.createElement('div');
+            selectedItem.classList.add('MuiPaper-root', '_1QOYR', 'MuiPaper-elevation1', 'MuiPaper-rounded');
+            selectedItem.innerHTML = `
+                                        <div class="MuiGrid-root MuiGrid-container">
+                                        <div class="MuiGrid-root MuiGrid-item">
+                                            <img src="data:image/jpeg;base64,${result.ruta}" width="100" height="100">
+                                        </div>
+                                        <div class="MuiGrid-root VIIDS MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-item MuiGrid-grid-xs-true">
+                                            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12">
+                                                <p class="MuiTypography-root _3sWaR MuiTypography-body2 MuiTypography-noWrap">${result.nombreDescripcion}</p>
+                                            </div>
+                                            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3">
+                                                <div class="_1inwy">
+                                                    <div class="_22E8b">ALMACEN</div>
+                                                    <div class="_1EhKN">PRINCIPAL - LURIN</div>
+                                                </div>
+                                            </div>
+                                            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3">
+                                                <div class="_1inwy">
+                                                    <div class="_22E8b">PRECIO UNIT.</div>
+                                                    <div class="_1EhKN">S/ ${result.precioVenta.toFixed(2)}</div>
+                                                </div>
+                                            </div>
+                                            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3">
+                                                <div class="_1inwy">
+                                                    <div class="_22E8b">DESCUENTO</div>
+                                                    <div class="_1EhKN">S/ 0.00</div>
+                                                </div>
+                                            </div>
+                                            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3">
+                                                <div class="_1inwy qmMei">
+                                                    <div class="_22E8b">TOTAL</div>
+                                                        <div class="_1EhKN total-price">S/ ${result.precioVenta.toFixed(2)}</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="MuiGrid-root _3_0Vb MuiGrid-item">
+                                            <div class="_3qjl2">
+                                                <a href="javascript:void(0)" class="_2_ukA">-</a>
+                                                           <span  codeProducto="${result.codigoUnico}" class="quantity">1</span>
+                                                <a href="javascript:void(0)" class="Yn3ig">+</a>
+                                            </div>
+                                                <button  codeProducto="${result.codigoUnico}" class="MuiButtonBase-root MuiButton-root MuiButton-outlined F4w-q MuiButton-outlinedSecondary MuiButton-fullWidth" tabindex="0" type="button">
+                                                    <span class="MuiButton-label">ELIMINAR</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                `;
+
+            selectedContainer.appendChild(selectedItem);
+
+            // Lógica para aumentar o disminuir la cantidad
+            const minusButton = selectedItem.querySelector('._2_ukA');
+            const plusButton = selectedItem.querySelector('.Yn3ig');
+            const quantityElement = selectedItem.querySelector('.quantity');
+            const totalPriceElement = selectedItem.querySelector('.total-price');
+            const descuentoInput = document.querySelector('.descuento');
+
+
+            let quantity = 1;
+            let discount = 0;
+            const maxQuantity = result.cantidad;
+
+            minusButton.addEventListener('click', function () {
+                if (quantity > 1) {
+                    quantity--;
+                    quantityElement.textContent = quantity;
+                    updateTotalPrice();
+                }
+            });
+
+            plusButton.addEventListener('click', function () {
+                if (quantity < maxQuantity) {
+                    quantity++;
+                    quantityElement.textContent = quantity;
+                    updateTotalPrice();
+                } else {
+                    alert('No puedes añadir más productos de los que hay disponibles en stock.');
+                }
+            });
+
+            // Actualizar el total cuando se cambia el descuento
+            descuentoInput.addEventListener('input', function () {
+                const value = parseFloat(this.value);
+                discount = isNaN(value) ? 0 : value;
+                updateTotalPrice();
+            });
+
+            function updateTotalPrice() {
+                const totalPriceBeforeDiscount = quantity * result.precioVenta;
+                const discountAmount = totalPriceBeforeDiscount * (discount / 100);
+                const totalPrice = totalPriceBeforeDiscount - discountAmount;
+                // totalPriceElement.textContent = `S/ ${totalPrice.toFixed(2)}`;  //monto del producto
+                updateGrandTotal(totalPrice);
+            }
+
+            // Lógica para eliminar el producto seleccionado
+            const deleteButton = selectedItem.querySelector('.MuiButtonBase-root');
+            deleteButton.addEventListener('click', function () {
+
+                console.log("deleteButton : ", deleteButton);
+                var code = deleteButton.getAttribute("codeProducto");
+                console.log("code : ", code);
+
+                selectedContainer.removeChild(selectedItem);
+
+                var totalContendorItems = selectedContainer.querySelectorAll('div').length;
+                if (totalContendorItems == 0) {
+                    botonesProcesamiento.forEach(button => {
+                        button.classList.add('Mui-disabled');
+                        button.setAttribute("disabled", "true");
+                    });
+                }
+                updateGrandTotal(null, code);
+            });
+
+            updateGrandTotal()
+        }
+    }
+
+    function updateGrandTotal(precio,borrar) {
+        const totalElement = document.getElementById('totalMonto');
+        let grandTotal = 0;
+
+
+        if (precio != null && precio > 0) {
+
+            grandTotal = precio;
+        } else {
+            const totalPrices = document.querySelectorAll('.MuiPaper-rounded');
+
+            totalPrices.forEach(item => {
+
+                if (borrar) {
+                    listaCodigos = listaCodigos.filter(codigo => codigo !== borrar);
+                }
+
+                const totalPriceElement = item.querySelector('.total-price');
+
+                if (totalPriceElement) {
+
+                    const price = parseFloat(totalPriceElement.textContent.replace('S/', '').trim());
+                    grandTotal += price;
+                }
+
+            });
+        }
+        console.log("listaCodigos 2: ", listaCodigos);
+
+        totalElement.textContent = `S/ ${grandTotal.toFixed(2)}`;
+    }
+
+    const checkboxInput = document.getElementById("checkboxProformaInput");
+    const checkboxContainer = document.getElementById("checkboxProforma");
+    const checkboxPath = document.getElementById("checkboxPath");
+
+    // Agregamos un evento de click al input
+    checkboxInput.addEventListener("click", function () {
+        // Verificamos si el input está marcado (checked)
+        if (checkboxInput.checked) {
+            // Si está marcado, cambiamos a las clases que indican que está checked
+            checkboxContainer.className = "MuiButtonBase-root MuiIconButton-root jss1 MuiCheckbox-root MuiCheckbox-colorSecondary jss2 Mui-checked MuiIconButton-colorSecondary";
+            // Cambiamos el path para mostrar un checkmark
+            checkboxPath.setAttribute("d", "M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z");
+        } else {
+            // Si no está marcado, volvemos a las clases y el path originales
+            checkboxContainer.className = "MuiButtonBase-root MuiIconButton-root jss5 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary";
+            // Cambiamos el path para mostrar el cuadrado vacío
+            checkboxPath.setAttribute("d", "M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z");
+        }
+    });
+
+
+    const btnProcesar = document.getElementById("btn-procesar");
+
+    btnProcesar.addEventListener("click", function () {
+        getResultsContainerValues();
+    });
+
+    //procesa la venta
+    function getResultsContainerValues() {
+        // Selecciona el contenedor principal
+        const resultsContainer = document.getElementById('selectedItemsContainer');
+        const items = resultsContainer.querySelectorAll('.quantity');
+
+        let itemList = [];
+
+        items.forEach(item => {
+
+            var code = item.getAttribute("codeProducto");
+
+            // Añadir el objeto a la lista
+            itemList.push({
+                code: code,
+                precio: item.innerText
+            });
+        });
+        console.log("itemList : ", itemList);
+
+        return itemList;
+    }
+
+    // Llamar a la función y mostrar la lista en consola
+    const selectedItems = getResultsContainerValues();
+
+</script>

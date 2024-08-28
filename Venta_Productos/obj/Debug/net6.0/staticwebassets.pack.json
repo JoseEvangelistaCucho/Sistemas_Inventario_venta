@@ -5,8 +5,140 @@
       "PackagePath": "staticwebassets\\Venta_Productos.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiAppBar.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiAppBar.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiBadge.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiBadge.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiButton.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiButton.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiButtonBase.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiButtonBase.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiCheckbox.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiCheckbox.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiCircularProgress.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiCircularProgress.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiDialog.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiDialog.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiDivider.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiDivider.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiFormControl.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiFormControl.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiFormControlLabel.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiFormControlLabel.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiFormLabel.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiFormLabel.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiGrid.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiGrid.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiIcon.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiIcon.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiIconButton.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiIconButton.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiInputAdornment.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiInputAdornment.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiInputBase.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiInputBase.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiInputLabel.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiInputLabel.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiList.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiList.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiListSubheader.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiListSubheader.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiMenu.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiMenu.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiOutlinedInput.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiOutlinedInput.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiPaper.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiPaper.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiPickersModal.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiPickersModal.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiPopover.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiPopover.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiSelect.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiSelect.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiSvgIcon.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiSvgIcon.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiToolbar.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiToolbar.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiTouchRipple.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiTouchRipple.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\MuiTypography.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\MuiTypography.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\PrivateNotchedOutline.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\PrivateNotchedOutline.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Componentes\\PrivateSwitchBase.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Componentes\\PrivateSwitchBase.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\General.css",
+      "PackagePath": "staticwebassets\\css\\Views\\General.css"
+    },
+    {
       "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Layout.css",
       "PackagePath": "staticwebassets\\css\\Views\\Layout.css"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\Views\\Producto.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Producto.css"
     },
     {
       "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\css\\site.css",
@@ -19,6 +151,10 @@
     {
       "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\imagenes\\keyfact_default_image.png",
+      "PackagePath": "staticwebassets\\imagenes\\keyfact_default_image.png"
     },
     {
       "Id": "C:\\Users\\Joze\\Desktop\\Proyecto_\\Sistemas_Inventario_venta\\Venta_Productos\\wwwroot\\imagenes\\perno.webp",

@@ -1,0 +1,9 @@
+﻿.MuiMenu-paper {
+    max-height: calc(100% - 96px);
+    -webkit-overflow-scrolling: touch;
+}
+
+.MuiMenu-list {
+    outline: 0;
+}
+

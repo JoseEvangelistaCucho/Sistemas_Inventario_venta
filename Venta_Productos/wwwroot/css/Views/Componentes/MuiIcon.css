@@ -1,0 +1,41 @@
+﻿.MuiIcon-root {
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.MuiIcon-colorPrimary {
+    color: #334fba;
+}
+
+.MuiIcon-colorSecondary {
+    color: #1e88e5;
+}
+
+.MuiIcon-colorAction {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.MuiIcon-colorError {
+    color: #f44336;
+}
+
+.MuiIcon-colorDisabled {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.MuiIcon-fontSizeInherit {
+    font-size: inherit;
+}
+
+.MuiIcon-fontSizeSmall {
+    font-size: 1.25rem;
+}
+
+.MuiIcon-fontSizeLarge {
+    font-size: 2.25rem;
+}
+

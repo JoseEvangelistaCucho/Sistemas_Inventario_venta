@@ -1,0 +1,437 @@
+﻿/********** POSIBLES GLOBALES******************/
+.contenedor-general-vista {
+    overflow-y: scroll;
+    flex: 1;
+}
+
+.contenedor-vista-detalle {
+    margin: 2vh;
+}
+
+.separador-componentes-vista {
+    margin-bottom: 1vh;
+}
+
+.detalle-producto {
+    width: calc(100% + 24px);
+    margin: -12px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-button {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.menu-options {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 120px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+    .menu-options a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .menu-options a:hover {
+            background-color: #f1f1f1;
+        }
+
+.item {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-list {
+    padding-left: 5vh;
+}
+/**************************/
+
+.MuiGrid-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.MuiGrid-spacing-xs-3 {
+    width: calc(100% + 24px);
+    margin: -12px;
+}
+
+    .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+        padding: 12px;
+    }
+
+.MuiGrid-item {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+._3dIl1 {
+    padding: 16px 24px;
+    margin-bottom: 12px;
+}
+
+.MuiPaper-root {
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #fff;
+}
+
+.MuiPaper-rounded {
+    border-radius: 8px;
+}
+
+.MuiPaper-elevation3 {
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.0), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.0);
+}
+
+._3dIl1 img {
+    border-radius: 80px;
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+
+.MuiGrid-item {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.MuiGrid-grid-xs-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+}
+
+._3dIl1 ._9o3BH, ._3dIl1 ._3V_vX {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.MuiGrid-spacing-xs-3 > .MuiGrid-item {
+    padding: 12px;
+}
+
+.MuiTypography-root {
+    margin: 0;
+}
+
+.MuiTypography-body1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+}
+
+._3dIl1 ._9o3BH .eOg94 {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0, 0, 0, .7);
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+._3dIl1 ._9o3BH .ta-eO {
+    color: #777;
+    font-size: 14px;
+}
+
+    ._3dIl1 ._9o3BH .ta-eO i {
+        color: #aaa;
+        display: inline-block;
+        margin-right: 4px;
+    }
+
+.MuiGrid-item {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+._3dIl1 ._9o3BH, ._3dIl1 ._3V_vX {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.MuiGrid-spacing-xs-3 > .MuiGrid-item {
+    padding: 12px;
+}
+
+.MuiTypography-root {
+    margin: 0;
+}
+
+.MuiTypography-button {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+}
+
+._3dIl1 ._3KeyQ {
+    display: block;
+    font-size: 22px;
+    line-height: 20px;
+    font-weight: 700;
+    border-radius: 8px;
+    color: #43a047;
+    text-align: center;
+    position: relative;
+    margin-bottom: 8px;
+    padding: 2px 16px 2px 4px;
+}
+
+
+    ._3dIl1 ._3KeyQ i {
+        font-size: 14px;
+        font-style: normal;
+    }
+
+
+    ._3dIl1 ._3KeyQ sub {
+        font-size: 14px;
+        vertical-align: sub;
+        position: absolute;
+        top: -2px;
+    }
+
+.MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.MuiButton-root {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 8px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+}
+
+.MuiButton-contained {
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.0), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.0);
+    background-color: #e0e0e0;
+}
+
+
+
+.MuiButton-containedSizeSmall {
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+}
+
+.MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+}
+
+.MuiTouchRipple-root {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.MuiGrid-item {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+._3dIl1 ._25yGY {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.MuiGrid-spacing-xs-3 > .MuiGrid-item {
+    padding: 12px;
+}
+
+.MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+}
+
+.MuiIconButton-edgeEnd {
+    margin-right: -12px;
+}
+
+.MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+}
+
+
+.MuiIcon-root {
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
+.MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+
+
+
+.MuiButton-root {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 8px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+}
+
+.MuiButton-contained {
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.0), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.0);
+    background-color: #e0e0e0;
+}
+
+.MuiButton-containedSecondary {
+    color: #fff;
+    background-color: #1e88e5;
+}
+
+.MuiButton-containedSizeSmall {
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+}
+
+sub, sup {
+    line-height: 1;
+}
+
+.componentes-inicio-final {
+    display: flex;
+}
+
+._1wSS- ._1nsP_ + ._1nsP_ {
+    margin-top: 16px !important;
+}
+

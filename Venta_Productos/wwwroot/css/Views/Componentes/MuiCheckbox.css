@@ -1,0 +1,40 @@
+﻿.MuiCheckbox-root {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.MuiCheckbox-colorPrimary.Mui-checked {
+    color: #334fba;
+}
+
+.MuiCheckbox-colorPrimary.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.MuiCheckbox-colorPrimary.Mui-checked:hover {
+    background-color: rgba(51, 79, 186, 0.04);
+}
+
+@media (hover: none) {
+    .MuiCheckbox-colorPrimary.Mui-checked:hover {
+        background-color: transparent;
+    }
+}
+
+.MuiCheckbox-colorSecondary.Mui-checked {
+    color: #1e88e5;
+}
+
+.MuiCheckbox-colorSecondary.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.MuiCheckbox-colorSecondary.Mui-checked:hover {
+    background-color: rgba(30, 136, 229, 0.04);
+}
+
+@media (hover: none) {
+    .MuiCheckbox-colorSecondary.Mui-checked:hover {
+        background-color: transparent;
+    }
+}
+

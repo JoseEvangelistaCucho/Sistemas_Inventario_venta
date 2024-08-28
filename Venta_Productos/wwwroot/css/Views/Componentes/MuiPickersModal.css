@@ -1,0 +1,20 @@
+﻿.MuiPickersModal-dialogRoot {
+    min-width: 310px;
+}
+
+.MuiPickersModal-dialogRootWider {
+    min-width: 325px;
+}
+
+.MuiPickersModal-dialog:first-child {
+    padding: 0;
+}
+
+.MuiPickersModal-withAdditionalAction {
+    justify-content: flex-start;
+}
+
+    .MuiPickersModal-withAdditionalAction > *:first-child {
+        margin-right: auto;
+    }
+
